@@ -34,7 +34,7 @@ public class CachacaController {
 	
 	@RequestMapping("/listar")
 	public ModelAndView listar() {
-		ModelAndView mv = new ModelAndView("/Lista");
+		ModelAndView mv = new ModelAndView("Lista");
 		mv.addObject("cachacas", cachacas.findAll());
 		return mv;
 	}
